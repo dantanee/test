@@ -17,8 +17,8 @@ const Message = ({type}) => {
     <div className={styles.message}>
     <p>Whatever work you do,you can do it in Zuri Chat</p>
     <div className={styles.buttonSection}>
-        <button className={styles.buttonFilled}><Link to="/features">Talk to Sales</Link></button>
-        <button className={styles.buttonOutline}><Link to="/">TRY IT FREE</Link></button>
+        <button className={styles.buttonFilled}><Link className = {`${styles.link} ${styles.linkFilled}`}to="/features">Talk to Sales</Link></button>
+        <button className={styles.buttonOutline}><Link className = {styles.link} to="/">TRY IT FREE</Link></button>
     </div>
 </div>
   )

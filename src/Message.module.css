@@ -30,12 +30,25 @@
     border: none;
     padding:12px 30px;
     background-color: white;
-    color: #00B87C;
+  
     cursor: pointer;
 }
-.buttonFilled > a {
+.link,.linkFilled {
     font-weight: 500;
     font-size: 1rem;
+    font-family: "Lato",sans-serif;
+}
+.link {
+    color: white;
+}
+.link:hover {
+    color:#00B87C;
+}
+.linkFilled {
+    color: #00B87C;
+}
+.linkFilled:hover {
+    color:white;
 }
 .buttonFilled:hover{
     transition:background 350ms;
