@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Message.module.css';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 const Message = ({type}) => {
   if(type === "contact") {
       return(
@@ -16,8 +17,8 @@ const Message = ({type}) => {
     <div className={styles.message}>
     <p>Whatever work you do,you can do it in Zuri Chat</p>
     <div className={styles.buttonSection}>
-        <button className={styles.buttonFilled}><a>Talk to Sales</a></button>
-        <button className={styles.buttonOutline}><a>TRY IT FREE</a></button>
+        <button className={styles.buttonFilled}><Link to="/features">Talk to Sales</Link></button>
+        <button className={styles.buttonOutline}><Link to="/">TRY IT FREE</Link></button>
     </div>
 </div>
   )
