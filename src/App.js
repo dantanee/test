@@ -12,7 +12,7 @@ function App() {
        <Route path="/" exact>
          <Contact />
        </Route>
-       <Route path="/features" >
+       <Route path={match.url + "/features"} >
          <Features />
        </Route>
      </Switch>
